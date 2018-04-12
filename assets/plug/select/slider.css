@@ -1,0 +1,95 @@
+.slider {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider ul {
+	position: relative;
+}
+
+.slider li {
+	float: left;
+	margin: 0px 10px;
+	list-style: none;
+	position: relative;
+	padding: 0;
+	line-height: 30px;
+}
+
+.slider li a {
+	font-size: 14px;
+	color: #fff;
+	display: block;
+	width: 120px;
+	padding: 5px 0px;
+	text-align: center;
+}
+
+.slider li.show a {
+	font-size: 18px;
+	background: #fff;
+	color: #76A2AC;
+	border-radius: 4px;
+	font-weight: normal;
+}
+
+.slider p {
+	margin: 0;
+	text-align: center;
+	font-size: 16px;
+}
+
+.slider li div.icon {
+	position: absolute;
+	right: 22px;
+	bottom: 14px;
+	font-size: 14px;
+}
+
+.slider li div.view {
+	bottom: 32px;
+	background: url(../images/ico-glass.png) no-repeat 0 3px;
+	padding-left: 32px;
+}
+
+.slider li div.like {
+	background: url(../images/ico-heart.png) no-repeat 0 3px;
+	padding-left: 35px;
+}
+
+.slider .control a {
+	position: absolute;
+	display: block;
+	width: 31px;
+	height: 31px;
+	overflow: hidden;
+	position: absolute;
+	top: 3px;
+}
+
+.slider .control a.next {
+	left: 0;
+	background: url(../../images/shangyinianji.png) no-repeat;
+}
+
+.slider .control a.prev {
+	right: 0px;
+	background: url(../../images/xiayinianji.png) no-repeat;
+}
+
+.sliderImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: no-repeat 0 0;
+	background-size: cover;
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+}

@@ -1,0 +1,446 @@
+html {
+	height: 100%;
+	font-size: 16px
+}
+
+body {
+	background: url(../images/indexbg.png) no-repeat top center;
+	height: 100%;
+	background-size: 100% 100%
+}
+
+.wrap {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto
+}
+
+.header {
+	height: 10%;
+	position:relative;
+}
+
+.header .logo {
+	height: 100%
+}
+
+.header .logo img {
+	height: 90%;
+	margin-top: 5%;
+	max-height: 70px
+}
+
+.index-nav {
+	position: absolute;
+	right:0%;
+	top:20%;
+	min-width: 45%;
+	/*margin-top: 1%;*/
+	background: url(../images/navbg.png) no-repeat left top;
+	padding: 0 10px;
+	margin-right: 2%;
+	background-size: 100% 100%
+}
+
+.index-nav ul li {
+	width: 25%
+}
+
+.index-nav ul li a {
+	display: block;
+	width: 100%;
+	padding: 4% 0 8% 0;
+	background: url(../images/navlibg.png) no-repeat center center;
+	background-size: 100% 100%;
+	font-size: 1.4rem;
+	text-align: center;
+	color: #000
+}
+
+.index-nav ul li a.active,
+.index-nav ul li:hover a {
+	background: url(../images/navcurbg.png) no-repeat center center;
+	background-size: 100% 100%
+}
+
+.index-contant {
+	height: 80%;
+	border-radius: 3vh;
+	background: url(../images/beijing.png) no-repeat top center;
+	background-size: 100% 100%
+}
+
+.index-contant .left {
+	width: 24.8%;
+	height: 100%;
+	text-align: center
+}
+
+.index-contant .line {
+	width: .2%;
+	height: 80%;
+	background: #333;
+	margin-top: 4%
+}
+
+.leftNav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 90%;
+	width: 100%;
+	padding: 5% 0
+}
+
+.left .resouce {
+	display: table;
+	width: 100%;
+	height: 10%;
+	background: url(../images/zuolanxian.png) no-repeat top center
+}
+
+.left .resouce div {
+	display: table-cell;
+	vertical-align: middle
+}
+
+.left .resouce em {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+	background: url(../images/resoucebtn.png) no-repeat;
+	background-size: 100%;
+	vertical-align: middle
+}
+
+.left .resouce a {
+	color: #fff;
+	font-size: 1.4rem;
+	vertical-align: middle
+}
+
+.leftNav .list {
+	height: 33.33%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	color: #fff;
+	font-size: 1.4rem;
+	cursor: pointer
+}
+
+.leftNav .list.active {
+	background: url(../images/caidanxuanzhong.png) no-repeat center center
+}
+
+.leftNav .list .num,
+.leftNav .list.active .num {
+	color: #000;
+	width: 20%;
+	display: table
+}
+
+.leftNav .list.active .line {
+	background: #5AD5F8
+}
+
+.leftNav .list .num span {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	height: 2.5rem;
+	background: url(../images/diannaotubiao.png) no-repeat center center;
+	background-size: 100% 100%
+}
+
+.leftNav .list .line {
+	margin: 0 5%;
+	height: 10%;
+	width: 1px;
+	background: #359ACB
+}
+
+.index-contant .right {
+	width: 75%;
+	height: 100%
+}
+
+.index-contant .right .bookList {
+	height: 90%;
+	position: relative;
+	overflow: hidden
+}
+
+.index-contant .right .classification {
+	height: 10%;
+	background: url(../images/youlanxian.png) no-repeat center top
+}
+
+.classification ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 100%
+}
+
+.classification ul li {
+	display: table;
+	width: 25%;
+	flex-grow: 1;
+	text-align: center;
+	height: 100%
+}
+
+.classification ul li a {
+	color: #fff;
+	font-size: 1.4rem;
+	display: block;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle
+}
+
+.classification ul li a em {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	margin-right: 5px
+}
+
+.classification ul li a span {
+	vertical-align: middle
+}
+
+.classification ul li a.all em {
+	background: url(../images/quanbu.png) no-repeat;
+	background-size: 100% 100%
+}
+
+.classification ul li a.beatuty em {
+	background: url(../images/jingpin.png) no-repeat;
+	background-size: 100% 100%
+}
+
+.classification ul li a.teach em {
+	background: url(../images/mingshi.png) no-repeat;
+	background-size: 100% 100%
+}
+
+.classification ul li a.school em {
+	background: url(../images/mingshi.png) no-repeat;
+	background-size: 100% 100%
+}
+
+.classification ul li a.active,
+.classification ul li a:hover {
+	color: #000;
+	background: url(../images/dise.png) no-repeat center center
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: table;
+	width: 100%;
+	text-align: center;
+	font-size: 1rem;
+	height: 10%;
+	color: #fff;
+	background: url(../images/beijing-shadow.png) no-repeat top center;
+	background-size: 80%
+}
+
+.footer p {
+	font-size: 1.2rem;
+	display: table-cell;
+	vertical-align: middle
+}
+
+.tab {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transition: all .3s ease-in 0s
+}
+
+.multipleColumn {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%
+}
+
+.multipleColumn .hd .next,
+.multipleColumn .hd .prev {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: 30px;
+	height: 50px
+}
+
+.multipleColumn .hd .prev {
+	left: 2%;
+	background: url(../images/shangyiye.png) no-repeat center center
+}
+
+.multipleColumn .hd .next {
+	right: 2%;
+	background: url(../images/xiayiye.png) no-repeat center center
+}
+
+.multipleColumn .hd ul {
+	position: absolute;
+	bottom: 2%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	overflow: hidden;
+	zoom: 1;
+	zoom: 1
+}
+
+.multipleColumn .hd ul li {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	overflow: hidden;
+	margin-right: 5px;
+	text-indent: -999px;
+	cursor: pointer;
+	background: url(../images/fenye01.png) no-repeat
+}
+
+.multipleColumn .hd ul li.on {
+	background: url(../images/fenye02.png) no-repeat
+}
+
+.multipleColumn .bd {
+	padding: 10px;
+	overflow: hidden;
+	width: 85%;
+	height: 93%;
+	margin: 0 auto
+}
+
+.multipleColumn .bd .tempWrap,
+.ulWrap,
+.ulWrap>ul {
+	height: 100%
+}
+
+.multipleColumn .bd ul {
+	overflow: hidden;
+	zoom: 1;
+	width: 100%;
+	float: left;
+	background: url(../images/shujia.png) no-repeat center 116%;
+	background-size: 100% 63%
+}
+
+.multipleColumn .bd ul li {
+	padding: 0 1%;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	width: 33.33%;
+	height: 50%
+}
+
+.multipleColumn .bd ul li .pic {
+	text-align: center;
+	height: 100%
+}
+
+.multipleColumn .bd ul li .pic img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 2px
+}
+
+.multipleColumn .bd ul li .pic a:hover img {
+	border-color: #999
+}
+
+.multipleColumn .bd ul li .title {
+	line-height: 24px
+}
+
+.resouce-dialg {
+	display: none;
+	position: absolute;
+	z-index: 99;
+	width: 80%;
+	height: 85%;
+	top: 7.5%;
+	left: 10%;
+	transition: all .3s ease-in 0s
+}
+
+.resouce-dialg .close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: url(../images/anniu.png) no-repeat center center
+}
+
+.resouceimg {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 2% 3% 4% 3%
+}
+
+.resouceimg img {
+	display: inline-block;
+	width: 100%;
+	height: 100%
+}
+@media screen and (max-width:1440px) {
+	.index-nav {
+		width:55%;
+	}
+}
+@media screen and (max-width:1280px) {
+	html {
+		font-size: 14px;
+	}
+	.index-nav {
+		width: 65%
+	}
+}
+
+@media screen and (max-width:1024px) {
+	html {
+		font-size: 12px;
+	}
+	.index-nav {
+		width: 65%
+	}
+	.leftNav .list .num,
+	.leftNav .list.active .num {
+		width: 25%
+	}
+	.index-contant .right .classification {
+		background: url(../images/youlanxian.png) no-repeat center top
+	}
+}

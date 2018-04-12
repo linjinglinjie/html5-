@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>视频播放</title>
+		<link rel="stylesheet" href="../assets/plug/bootstrap/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/css/common.css" />
+		<link rel="stylesheet" href="../assets/css/video2.css" />
+		<link rel="stylesheet" href="../assets/css/queNew.css" />
+		<link rel="stylesheet" href="../assets/plug/video/depend/videoCT.css">
+		<link rel="stylesheet" href="../assets/plug/video/css/index.css">
+		<link rel="stylesheet" href="../assets/plug/select/slider.css" />
+	</head>
+
+	<body>
+		<div class="vtBgColor">
+			<div class="video-head">
+				<div class="wrap">
+					<div class="in-left">
+						<a class="goback" href="resouce.html">返回上一页</a>
+						<span class="mainbx" onclick="aa()">当前：</span>
+
+						<div id="dd" class="wrapper-dropdown-3" tabindex="1">
+							<span>Unit 1 How often do you express?</span>
+							<div class="slideToggle">
+								<div class="choseList">
+									<div class="second-navi">
+										<table>
+											<tbody>
+												<tr>
+													<td class="first">学段：</td>
+													<td>
+														<ul>
+															<li onclick="addNavCls(this)">
+																<a class="active" title="幼小衔接">幼小衔接</a>
+															</li>
+															<li onclick="addNavCls(this)">
+																<a title="小学">小学</a>
+															</li>
+															<li onclick="addNavCls(this)">
+																<a title="初中">初中</a>
+															</li>
+															<li onclick="addNavCls(this)">
+																<a title="高中">高中</a>
+															</li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td class="first">学科：</td>
+													<td class="slideNav" page="1">
+														<div class="img_l" onclick="left(this)" style="margin-top:11px"><img src="../assets/images/shangyiye.png" /></div>
+														<div class="apply_nav">
+															<div class="apply_w">
+																<ul>
+																	<li onclick="addNavCls(this)">
+																		<a class="active" title="数学">数学</a>
+																	</li>
+																	<li onclick="addNavCls(this)">
+																		<a title="语文">语文</a>
+																	</li>
+																	<li onclick="addNavCls(this)">
+																		<a title="英语">英语</a>
+																	</li>
+																	<li onclick="addNavCls(this)">
+																		<a title="物理">物理</a>
+																	</li>
+																	<li onclick="addNavCls(this)">
+																		<a title="地理">地理</a>
+																	</li>
+															</div>
+														</div>
+														<div class="img_r" onclick="right(this)" style="margin-top:11px"><img src="../assets/images/xiayiye.png" /></div>
+													</td>
+												</tr>
+												<tr>
+													<td class="first">学校：</td>
+													<td class="slideNav" page="1">
+														<div class="img_l" onclick="left(this)" style="margin-top:11px"><img src="../assets/images/shangyiye.png" /></div>
+														<div class="apply_nav">
+															<div class="apply_w">
+																<ul>
+																	<li onclick="addNavCls(this)">
+																		<a  class="active" title="天津市二十二中学">二十二中学</a>
+																	</li>
+																	<li onclick="addNavCls(this)">
+																		<a title="天津市第二南开中学">第二南开中学</a>
+																	</li>
+																	<li onclick="addNavCls(this)">
+																		<a title="天津市第六十一中学">第六十一中学</a>
+																	</li>
+																	<li onclick="addNavCls(this)">
+																		<a title="天津市第十九中学">第十九中学</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+														<div class="img_r" onclick="right(this)" style="margin-top:11px"><img src="../assets/images/xiayiye.png" /></div>
+													</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="">
+									<div class="top">
+										<div class="grade-chose">
+											<div class="slider">
+												<ul>
+													<li>
+														<p>
+															<a href="#">七年级上册</a>
+														</p>
+													</li>
+													<li>
+														<p>
+															<a href="#">七年级下册</a>
+														</p>
+													</li>
+													<li>
+														<p>
+															<a href="#">八年级上册</a>
+														</p>
+													</li>
+													<li>
+														<p>
+															<a href="#">八年级下册</a>
+														</p>
+													</li>
+													
+												</ul>
+												<div class="control">
+													<a href="javascript:void(0)" class="next"></a>
+													<a href="javascript:void(0)" class="prev"></a>
+												</div>
+											</div>
+
+										</div>
+										<div class="textRight">
+											<label><input type="checkbox" />
+											全选</label>
+										</div>
+									</div>
+									<ul class="dropdown">
+										<li>
+											<a href="#"><i class="icon-envelope icon-large"></i>Unit 1 How often do you express?</a>
+										</li>
+										<li>
+											<a href="#"><i class="icon-truck icon-large"></i>Unit 2 What the matter?</a>
+										</li>
+										<li>
+											<a href="#"><i class="icon-plane icon-large"></i>Unit 3 language in use</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="in-right">
+						<div class="search in-left">
+							<input type="text" placeholder="课程搜索">
+							<input type="button" class="searBtn">
+						</div>
+						<div class="in-left who-out">
+							<span>
+								<em class="name">郭晓丽</em>老师，<em>上午</em>好！
+							</span>
+							<a class="login-out">退出</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="video-box" id="putvideo">
+					<div class="video-playw in-left">
+						<!--水印-->
+						<div class="Watermark">
+							<div class="logo"></div>
+							<div class="Barcode"></div>
+						</div>
+						<div class="video-in">
+							<video width="100%" height="85%" id="video1"></video>
+						</div>
+						<div class="oprate">
+							<div class="in-left">
+								<a class="slideToggleb" onclick="inforToggle(this)">相关课程<em></em></a>
+							</div>
+							<div class="in-right">
+								<a class="oprate-btn share" onclick="share(this)"><em class="icon iconfont">&#xe608;</em>分享</a>
+								<a class="oprate-btn like" onclick="like(this)"><em class="no icon iconfont">&#xe872;</em><em class="already icon iconfont">&#xe871;</em><span>点赞</span></a>
+								<a class="oprate-btn keep" onclick="keep(this)"><em class="no icon iconfont">&#xe86e;</em><em class="already icon iconfont">&#xe86d;</em><span>收藏</span></a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="descript-video in-left">
+						<div class="title"><span class="titlename">（it的用法）第三讲</span></div>
+						<div>
+							<dl class="videoInfo">
+								<dt class="key keytn">发布时间：</dt>
+								<dd class="fbtime">2017-08-12</dd>
+							</dl>
+							<dl class="videoInfo">
+								<dt class="key keytn">播放次数：</dt>
+								<dd class="playnum">5.3万次</dd>
+							</dl>
+							<dl class="videoInfo">
+								<dt class="key">视频录制类型：</dt>
+								<dd class="videotype">课堂实录型（有学生参与）</dd>
+							</dl>
+							<dl class="videoInfo">
+								<dt class="key">时长：</dt>
+								<dd class="playtime">7分12秒</dd>
+							</dl>
+							<dl class="videoInfo">
+								<dt class="key">讲师：</dt>
+								<dd class="teacher">郭晓丽</dd>
+							</dl>
+							<dl class="videoInfo">
+								<dt class="key">学校：</dt>
+								<dd class="school">天津市第二十一中学</dd>
+							</dl>
+							<dl class="videoInfo">
+								<dt class="key">学科：</dt>
+								<dd class="xueke">英语</dd>
+							</dl>
+							<dl class="videoInfo">
+								<dt class="key">年级：</dt>
+								<dd class="class">八年级</dd>
+							</dl>
+							<dl class="videoInfo">
+								<dt class="key">学期：</dt>
+								<dd class="xueqi">上学期</dd>
+							</dl>
+							<dl class="videoInfo table">
+								<dt class="key">章节：</dt>
+								<dd class="zhangjie">Unit 1-2 Grammar</dd>
+							</dl>
+							<dl class="videoInfo table">
+								<dt class="key">描述：</dt>
+								<dd class="descript">通过对课程的学习，是学生掌握it的具体用法，当使用it作为形式主语代替句子中的主语，或者作为形式宾语代替句子中的宾语。通常，句中真正的主语或宾语常用动词不定式
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="sameVideo ToggleBox">
+						<div class="picScroll-left">
+							<div class="hd">
+								<a class="next icon iconfont">&#xe65f;</a>
+								<a class="prev icon iconfont">&#xe660;</a>
+							</div>
+							<div class="bd">
+								<ul class="picList">
+									<li datasrc="../assets/plug/video/videos/1443432233175.mp4">
+										<div class="pic">
+											<a>
+												<img src="../assets/images/resoucevideo/01.png" />
+											</a>
+											<div class="title">
+												<p class="unit">Unit 2 My home town and my country</p>
+												<p>天津第二南开学校</p>
+											</div>
+											<span class="playimg"></span>
+										</div>
+									</li>
+									<li datasrc="../assets/plug/video/videos/1443428338207.mp4">
+										<div class="pic">
+											<a>
+												<img src="../assets/images/resoucevideo/02.png" />
+											</a>
+											<div class="title">
+												<p class="unit">Unit 3 Language in use</p>
+												<p>天津市第二南开中学</p>
+											</div>
+											<span class="playimg"></span>
+										</div>
+									</li>
+									<li datasrc="../assets/plug/video/videos/1444365984912.mp4">
+										<div class="pic">
+											<a>
+												<img src="../assets/images/resoucevideo/03.png" />
+											</a>
+											<div class="title">
+												<p class="unit">宾语从句基础知识</p>
+												<p>天津市第六十一中学</p>
+											</div>
+											<span class="playimg"></span>
+										</div>
+									</li>
+									<li datasrc="../assets/plug/video/videos/1444718640672.mp4">
+										<div class="pic">
+											<a>
+												<img src="../assets/images/resoucevideo/04.png" />
+											</a>
+											<div class="title">
+												<p class="unit">Module 9 population</p>
+												<p>天津市第二十一中学</p>
+											</div>
+											<span class="playimg"></span>
+										</div>
+									</li>
+									<li datasrc="../assets/plug/video/videos/1444817852474.mp4">
+										<div class="pic">
+											<a>
+												<img src="../assets/images/resoucevideo/05.png" />
+											</a>
+											<div class="title">
+												<p class="unit">形容词比较级和最高级的变化</p>
+												<p>天津市第二十一中学</p>
+											</div>
+											<span class="playimg"></span>
+										</div>
+									</li>
+									<li datasrc="../assets/plug/video/videos/1443154736547.mp4">
+										<div class="pic">
+											<a>
+												<img src="../assets/images/resoucevideo/06.png" />
+											</a>
+											<div class="title">
+												<p class="unit">Vocabulary Grammar Sentences</p>
+												<p>天津市第十九中学</p>
+											</div>
+											<span class="playimg"></span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="wrap">
+			<!--导航-->
+			<div>
+				<div class="videoNav in-left">
+					<ul>
+						<li class="goback">
+							<a href="resouce.html">返回上一页</a>
+						</li>
+						<li class="menuItem RelatQue">
+							<a href="#RelatQue">相关习题<em></em></a>
+						</li>
+						<li class="menuItem Relatswap textRight">
+							<a href="#Relatswap">互动交流</a>
+						</li>
+						<li class="menuItem Relatdata">
+							<a href="#Relatdata">相关资料</a>
+						</li>
+						<li class="top">
+							<a class="cd-top">返回顶部<em></em></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="videoRelat in-left">
+				<!--相关习题-->
+				<div id='RelatQue' class="list">
+					<div class="title">
+						<div class="in-left">相关习题</div>
+						<div class="in-right">
+							<a onclick="RelatSlide(this)">
+								<<收起</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="">
+						<ul class="in-right" id="xuanxiang">
+							<li class="in-left">
+								<label>难度：</label>
+								<div class="btn-group">
+									<button class="btn" id="rubChose">全部</button>
+									<button class="btn dropdown-toggle" data-toggle="dropdown">
+							        <span class="caret"></span>
+							      </button>
+									<ul class="dropdown-menu">
+										<li>
+											<a value="" onclick="queChose(this,'rubChose')">全部</a>
+										</li>
+										<li>
+											<a value="ND1" onclick="queChose(this,'rubChose')">简单</a>
+										</li>
+										<li>
+											<a value="ND2" onclick="queChose(this,'rubChose')">一般</a>
+										</li>
+										<li>
+											<a value="ND3" onclick="queChose(this,'rubChose')">中等</a>
+										</li>
+										<li>
+											<a value="ND4" onclick="queChose(this,'rubChose')">困难</a>
+										</li>
+										<li>
+											<a value="ND5" onclick="queChose(this,'rubChose')">极难</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="in-left">
+								<label>题型：</label>
+								<div class="btn-group">
+									<button class="btn" id="TypeChose">全部</button>
+									<button class="btn dropdown-toggle" data-toggle="dropdown">
+							        <span class="caret"></span>
+							      </button>
+									<ul class="dropdown-menu">
+										<li>
+											<a value="" onclick="queChose(this,'TypeChose')">全部</a>
+										</li>
+										<li>
+											<a value="TX01" onclick="queChose(this,'TypeChose')">单选</a>
+										</li>
+										<li>
+											<a value="TX02" onclick="queChose(this,'TypeChose')">多选</a>
+										</li>
+										<li>
+											<a value="TX03" onclick="queChose(this,'TypeChose')">填空</a>
+										</li>
+										<li>
+											<a value="TX04" onclick="queChose(this,'TypeChose')">判断</a>
+										</li>
+										<li>
+											<a value="TX05" onclick="queChose(this,'TypeChose')">阅读</a>
+										</li>
+										<li>
+											<a value="TX06" onclick="queChose(this,'TypeChose')">完形</a>
+										</li>
+										<li>
+											<a value="TX07" onclick="queChose(this,'TypeChose')">解答</a>
+										</li>
+										<li>
+											<a value="TX10" onclick="queChose(this,'TypeChose')">对话/段落</a>
+										</li>
+										<li>
+											<a value="TX11" onclick="queChose(this,'TypeChose')">听力选择</a>
+										</li>
+										<li>
+											<a value="TX12" onclick="queChose(this,'TypeChose')">听力填空</a>
+										</li>
+										<li>
+											<a value="TX13" onclick="queChose(this,'TypeChose')">听力判断</a>
+										</li>
+										<li>
+											<a value="TX14" onclick="queChose(this,'TypeChose')">补全对话</a>
+										</li>
+										<li>
+											<a value="TX15" onclick="queChose(this,'TypeChose')">主观题</a>
+										</li>
+										<li>
+											<a value="TX16" onclick="queChose(this,'TypeChose')">综合题</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="in-left">
+								<label>分级：</label>
+								<div class="btn-group">
+									<button class="btn" id="GradedChose">全部</button>
+									<button class="btn dropdown-toggle" data-toggle="dropdown">
+							        <span class="caret"></span>
+							      </button>
+									<ul class="dropdown-menu">
+										<li>
+											<a value="LEVEL1" onclick="queChose(this,'GradedChose')">一星级</a>
+										</li>
+										<li>
+											<a value="LEVEL2" onclick="queChose(this,'GradedChose')">二星级</a>
+										</li>
+										<li>
+											<a value="LEVEL3" onclick="queChose(this,'GradedChose')">三星级</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<div class="clear"></div>
+						<div class="stem-content">
+							<div class="que-show">
+								<div class="que-show-answer">
+									<div class="first">
+										<p class="que-title">题型：填空题</p>
+										<p class="que-title">分级：一星级基础题</p>
+										<p class="que-title">难度：一般</p>
+										<a href="javascript:void(0);" onclick="keep(this)" title="收藏" class="CollectionA in-right"><i class="homeworkNew Collection"></i><span>收藏</span></a>
+									</div>
+									<div class="second">
+										<div class="question" id="question_c2c1a3f046a847e28a8114a1064923c4">看图，选择适当的单词，将句子补充完整。<br>Look, at my new (_____).<br>
+											<img alt="" src="../assets/images/resoucevideo/05.png" style="height:76px; width:134px">
+										</div>
+									</div>
+									<span class="read-more" onclick="readMore(['question_c2c1a3f046a847e28a8114a1064923c4'],m1,1,0);"></span>
+								</div>
+								<div class="que-show-resolve">
+									<div class="resolve-title">
+										<a onclick="openjx(this)" class="onopen"><i class="homeworkNew Analysis"></i>查看解析</a>
+										<!--<a href="javascript:void(0);" onclick="addQueErrorInfo()" title="纠错" class="ErrorCA"><i class="homeworkNew Errorcorrect"></i>纠错</a>-->
+										<p class="jiontext"><input value="提交" onclick="turefalse(this,true)" class="join" flag="quesButton" quetype="TX03" type="button"></p>
+									</div>
+									<div class="resolve-content">
+										<p>【答案】</p>
+										<div><span>school</span>&nbsp;&nbsp;</div>
+										<p>【解析】</p>
+										<div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="stem-content">
+							<div class="que-show">
+								<div class="que-show-answer">
+									<div class="first">
+										<p class="que-title">题型：填空题</p>
+										<p class="que-title">分级：一星级基础题</p>
+										<p class="que-title">难度：中等</p>
+										<a href="javascript:void(0);" onclick="keep(this)" title="收藏" class="CollectionA in-right"><i class="homeworkNew Collection"></i><span>收藏</span></a>
+									</div>
+									<div class="question" id="question_f180492f00184ce19d5d95ad9501cbaf"><p>用成语概括句子中画线部分的意思。</p>
+
+<p>国庆节到了，街道上的<u>人非常多</u>。(_____)</p></div>
+									<span class="read-more" onclick="readMore(['question_c2c1a3f046a847e28a8114a1064923c4'],m1,1,0);"></span>
+								</div>
+								<div class="que-show-resolve">
+									<div class="resolve-title">
+										<a onclick="openjx(this)" class="onopen"><i class="homeworkNew Analysis"></i>查看解析</a>
+										<!--<a href="javascript:void(0);" onclick="addQueErrorInfo()" title="纠错" class="ErrorCA"><i class="homeworkNew Errorcorrect"></i>纠错</a>-->
+										<p class="jiontext"><input value="提交" onclick="turefalse(this,false)" class="join" flag="quesButton" quetype="TX03" type="button"></p>
+									</div>
+									<div class="resolve-content"><p>【答案】</p><div><span>人山人海</span>&nbsp;&nbsp;</div><p>【解析】</p><div></div></div>
+								</div>
+							</div>
+						</div>
+						<div class="stem-content">
+							<div class="que-show">
+								<div class="que-show-answer">
+									<div class="first">
+										<p class="que-title">题型：填空题</p>
+										<p class="que-title">分级：一星级基础题</p>
+										<p class="que-title">难度：一般</p>
+										<a href="javascript:void(0);" onclick="keep(this)" title="收藏" class="CollectionA in-right"><i class="homeworkNew Collection"></i><span>收藏</span></a>
+									</div>
+									<div class="second"><div class="question" id="question_c7fc0ae22a79467a909c1a2ff9d79b43"><p>根据课文内容，在括号里填上表示颜色的词语。</p>
+
+<p>(_____)的青苔</p></div></div>
+									<span class="read-more" onclick="readMore(['question_c2c1a3f046a847e28a8114a1064923c4'],m1,1,0);"></span>
+								</div>
+								<div class="que-show-resolve">
+									<div class="resolve-title">
+										<a onclick="openjx(this)" class="onopen"><i class="homeworkNew Analysis"></i>查看解析</a>
+										<!--<a href="javascript:void(0);" title="收藏" class="CollectionA"><i class="homeworkNew Collection"></i>收藏</a>
+										<a href="javascript:void(0);" onclick="addQueErrorInfo()" title="纠错" class="ErrorCA"><i class="homeworkNew Errorcorrect"></i>纠错</a>-->
+										<p class="jiontext"><input value="提交" onclick="turefalse(this,true)" class="join" flag="quesButton" quetype="TX03" type="button"></p>
+									</div>
+									<div class="resolve-content"><p>【答案】</p><div><span>黑里透绿</span>&nbsp;&nbsp;</div><p>【解析】</p><div></div></div>
+								</div>
+							</div>
+						</div>
+						<div class="stem-content">
+							<div class="que-show">
+								<div class="que-show-answer">
+									<div class="first">
+										<p class="que-title">题型：填空题</p>
+										<p class="que-title">分级：一星级基础题</p>
+										<p class="que-title">难度：中等</p>
+										<a href="javascript:void(0);" onclick="keep(this)" title="收藏" class="CollectionA in-right"><i class="homeworkNew Collection"></i><span>收藏</span></a>
+									</div>
+									<div class="second"><div class="question" id="question_816f1a5ffe054c9bbcf5fa9184edb7fe"><p>选词填空。</p>
+
+<p>镶嵌&nbsp;&nbsp;&nbsp;&nbsp; 绽开&nbsp;&nbsp;&nbsp;&nbsp; 筛下&nbsp;&nbsp;&nbsp;&nbsp; 交错</p>
+
+<p align="left">1. 水泡在水面(_____)了，在扑哧一笑中消失了。</p>
+
+<p align="left">2. 有时候，透过密密的树叶，太阳(_____)一束束金光。</p>
+
+<p align="left">3. 泉水的周围(_____)着不大整齐的石头。</p>
+
+<p align="left">4. 水面和潭底，金色的光斑和银色的光斑(_____)着。</p></div></div>
+									<span class="read-more" onclick="readMore(['question_c2c1a3f046a847e28a8114a1064923c4'],m1,1,0);"></span>
+								</div>
+								<div class="que-show-resolve">
+									<div class="resolve-title">
+										<a onclick="openjx(this)" class="onopen"><i class="homeworkNew Analysis"></i>查看解析</a>
+										<!--<a href="javascript:void(0);" title="收藏" class="CollectionA"><i class="homeworkNew Collection"></i>收藏</a>
+										<a href="javascript:void(0);" onclick="addQueErrorInfo()" title="纠错" class="ErrorCA"><i class="homeworkNew Errorcorrect"></i>纠错</a>-->
+										<p class="jiontext"><input value="提交" onclick="turefalse(this,true)" class="join" flag="quesButton" quetype="TX03" type="button"></p>
+									</div>
+									<div class="resolve-content"><p>【答案】</p><div><span>绽开</span>&nbsp;&nbsp;<span>筛下</span>&nbsp;&nbsp;<span>镶嵌</span>&nbsp;&nbsp;<span>交错</span>&nbsp;&nbsp;</div><p>【解析】</p><div></div></div>
+								</div>
+							</div>
+						</div>
+						<!--分页-->
+						<div class="pages textcenter">
+							<button class="prev"><</button>
+							<button class="active">1</button>
+							<button>2</button>
+							<button>3</button>
+							<button class="next">></button>
+						</div>
+					</div>
+				</div>
+				<!--互动交流-->
+				<div id='Relatswap' class="list">
+					<div class="title">
+						<div class="in-left">协作学习（2条）</div>
+						<div class="in-right">
+							<a onclick="RelatSlide(this)">
+								<<收起</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="comment">
+						<div class="Write-com">
+							<textarea id="review" placeholder="我来说两句" onkeydown="checkMaxInput(this,140)" onkeyup="checkMaxInput(this,140)" onfocus="checkMaxInput(this,140)" onblur="checkMaxInput(this,140);resetMaxmsg();"></textarea>
+							<div class="Published textRight">
+								<input type="button" value="发表评论" />
+							</div>
+						</div>
+						<div class="lists">
+							<div class="list">
+								<div class="title">
+									<p class="in-left"><em>李小萌</em><span>发表于 2017-8-8 16:47:20</span></p>
+									<p class="in-right">2楼</p>
+									<div class="clear"></div>
+								</div>
+								<div class="content">
+									一直很关注郭老师，
+								</div>
+								<div class="Replys">
+									<div class="title">
+										<p class="in-left">讲师回复：<span>2017-8-8 16:47:20</span></P>
+										<p class="in-right">
+											<a>回复</a>
+											<a class="replaytg" onclick="replaytg(this)">收起</a>
+										</p>
+										<div class="clear"></div>
+									</div>
+									<div class="content">
+										感谢你的关注与支持
+									</div>
+								</div>
+								<div class="Replybtn textRight">
+									<input type="button" value="回复">
+								</div>
+							</div>
+							<div class="list">
+								<div class="title">
+									<p class="in-left"><em>李小萌</em>老师<span>发表于 2017-8-8 16:47:20</span></p>
+									<p class="in-right">2楼</p>
+									<div class="clear"></div>
+								</div>
+								<div class="content">
+									一直很关注郭老师，
+								</div>
+								<div class="Replybtn textRight">
+									<input type="button" value="回复">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--相关资料-->
+				<div id='Relatdata' class="list">
+					<div class="title">
+						<div class="in-left">相关资料（2个）</div>
+						<div class="in-right">
+							<a onclick="RelatSlide(this)">
+								<<收起</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<table class="dataList">
+						<tr>
+							<td class="w15">
+								<img src="../assets/images/s-document.png">
+							</td>
+							<td class="w60">
+								it 用法实例
+							</td>
+							<td class="w25">
+								<a>在线预览</a>
+								<a>下载</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="w15">
+								<img src="../assets/images/S-jpg.png">
+							</td>
+							<td class="w60">
+								it 用法实例
+							</td>
+							<td class="w25">
+								<a>在线预览</a>
+								<a>下载</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="footer textcenter">
+			技术支持：金硕集团 津 ICP备11005453号-2
+		</div>
+
+		<!--分享-->
+		<div class="shareDialog">
+			<div class="title textRight">分享给大家</div>
+			<div class="sharebox">
+				<textarea placeholder="说点什么..." onkeydown="checkMaxInput(this,140)" onkeyup="checkMaxInput(this,140)" onfocus="checkMaxInput(this,140)" onblur="checkMaxInput(this,140);"></textarea>
+				<div class="shareWhat">
+					<p>郭晓丽老师</p>
+					<p>Grammar User of it (it)的用法第一讲</p>
+				</div>
+			</div>
+			<div class="brow">
+				<div class="in-left">
+
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="caozuo">
+				<div class="in-left">
+					<input type="button" class="shareBtn" value="分享" onclick="sharecancel()">
+					<input type="button" value="取消" onclick="sharecancel()">
+				</div>
+				<div class="in-right">
+					<div class="bshare-custom icon-medium">
+						<div class="bsPromo bsPromo2"></div>
+						<a title="分享到" href="http://www.bShare.cn/" id="bshare-shareto" class="bshare-more">分享到</a>
+						<a title="分享到QQ空间" class="bshare-qzone"></a>
+						<a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+						<a title="分享到人人网" class="bshare-renren"></a>
+						<a title="分享到腾讯微博" class="bshare-qqmb"></a>
+						<a title="分享到网易微博" class="bshare-neteasemb"></a>
+						<a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+					</div>
+					<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+					<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+		</div>
+		<div class="box"></div>
+		
+		<div class="json" style="display:none">
+			<div class="play1">
+				<p class="title">Unit 2 My home town and my country</p>
+				<p class="fbtime">2017-08-12</p>
+				<p class="playnum">10万次</p>
+				<p class="videotype">录屏软件录制+PPT课件型  </p>
+				<p class="playtime">09:43</p>
+				<p class="teacher">刘洪晶</p>
+				<p class="school">天津市第二南开中学</p>
+				<p class="xueke">英语</p>
+				<p class="class">八年级</p>
+				<p class="xueqi">上学期</p>
+				<p class="zhangjie">Module 2 My home town and my country</p>
+				<p class="descript">通过对课程的学习，是学生掌握it的具体用法，当使用it作为形式主语代替句子中的主语，或者作为形式宾语代替句子中的宾语。通常，句中真正的主语或宾语常用动词不定式</p>
+			</div>
+			<div class="play1">
+				<p class="title">Uint 3 language in use</p>
+				<p class="fbtime">2015-09-28</p>
+				<p class="playnum">10万次</p>
+				<p class="videotype">录屏软件录制+PPT课件型 </p>
+				<p class="playtime">08:46</p>
+				<p class="teacher">钱晓玲</p>
+				<p class="school">天津市第二南开中学</p>
+				<p class="xueke">英语</p>
+				<p class="class">八年级</p>
+				<p class="xueqi">上学期</p>
+				<p class="zhangjie">Module 3 Sports</p>
+				<p class="descript">通过对课程的学习，是学生掌握it的具体用法，当使用it作为形式主语代替句子中的主语，或者作为形式宾语代替句子中的宾语。通常，句中真正的主语或宾语常用动词不定式</p>
+			</div>
+			<div class="play1">
+				<p class="title">Module 9 population</p>
+				<p class="fbtime">2015-10-09</p>
+				<p class="playnum">10万次</p>
+				<p class="videotype">录屏软件录制+PPT课件型</p>
+				<p class="playtime">06:40</p>
+				<p class="teacher">程莉华</p>
+				<p class="school">天津市第二十一中学</p>
+				<p class="xueke">英语</p>
+				<p class="class">八年级</p>
+				<p class="xueqi">上学期</p>
+				<p class="zhangjie">Module 9 Population</p>
+				<p class="descript">通过对课程的学习，是学生掌握it的具体用法，当使用it作为形式主语代替句子中的主语，或者作为形式宾语代替句子中的宾语。通常，句中真正的主语或宾语常用动词不定式</p>
+			</div>
+			<div class="play1">
+				<p class="title">形容词比较级和最高级的变化</p>
+				<p class="fbtime">2015-10-13</p>
+				<p class="playnum">10万次</p>
+				<p class="videotype">录屏软件录制+PPT课件型</p>
+				<p class="playtime">05:56</p>
+				<p class="teacher">王建慧</p>
+				<p class="school">天津市第二十一中学</p>
+				<p class="xueke">英语</p>
+				<p class="class">八年级</p>
+				<p class="xueqi">上学期</p>
+				<p class="zhangjie">Module 4 Planes, Ships and trains</p>
+				<p class="descript">通过对课程的学习，是学生掌握it的具体用法，当使用it作为形式主语代替句子中的主语，或者作为形式宾语代替句子中的宾语。通常，句中真正的主语或宾语常用动词不定式</p>
+			</div>
+			<div class="play1">
+				<p class="title">Unit 2 My home town and my country</p>
+				<p class="fbtime">2015-10-14 </p>
+				<p class="playnum">10万次</p>
+				<p class="videotype">录屏软件录制+PPT课件型  </p>
+				<p class="playtime">06:21</p>
+				<p class="teacher">李欣</p>
+				<p class="school">天津市第十九中学</p>
+				<p class="xueke">英语</p>
+				<p class="class">八年级</p>
+				<p class="xueqi">上学期</p>
+				<p class="zhangjie">Module 2 My home town and my country</p>
+				<p class="descript">通过对课程的学习，是学生掌握it的具体用法，当使用it作为形式主语代替句子中的主语，或者作为形式宾语代替句子中的宾语。通常，句中真正的主语或宾语常用动词不定式</p>
+			</div>
+			<div class="play1">
+				<p class="title">Animals in danger</p>
+				<p class="fbtime">2015-09-25</p>
+				<p class="playnum">10万次</p>
+				<p class="videotype">录屏软件录制+PPT课件型</p>
+				<p class="playtime">07:42</p>
+				<p class="teacher">于涵</p>
+				<p class="school">天津市汇文中学</p>
+				<p class="xueke">英语</p>
+				<p class="class">八年级</p>
+				<p class="xueqi">上学期</p>
+				<p class="zhangjie">Module 10 The weather </p>
+				<p class="descript">通过对课程的学习，是学生掌握it的具体用法，当使用it作为形式主语代替句子中的主语，或者作为形式宾语代替句子中的宾语。通常，句中真正的主语或宾语常用动词不定式</p>
+			</div>
+		</div>
+		
+		
+		<input type="hidden" id="signID" value="" />
+		<input type="hidden" id="signNum" value="" />
+		<script src="../assets/js/jquery-1.11.1.js"></script>
+		<script src="../assets/plug/bootstrap/bootstrap.min.js"></script>
+		<script src="../assets/plug/slider/js/jquery.SuperSlide.2.1.js"></script>
+		<script src="../assets/plug/stickUp.min.js"></script>
+		<script src="../assets/js/top.js"></script>
+		<script src="../assets/js/video2.js"></script>
+		<script type='text/javascript' src="../assets/plug/video/depend/videoCT.js"></script>
+		<script type='text/javascript' src="../assets/plug/video/js/index.js"></script>
+		<script type="text/javascript" src="../assets/plug/select/lens-slider.js"></script>
+		<script src="../assets/plug/select.js"></script>
+		<script>
+			$(document).ready(function() {
+				jQuery(".picScroll-left").slide({
+				titCell: ".hd ul",
+				mainCell: ".bd ul",
+				autoPage: true,
+				effect: "left",
+				autoPlay: false,
+				vis: 4,
+				trigger: "click"
+			});
+			
+			$('.descript-video').find('.titlename').text(localStorage.getItem("title"));
+			$('.video-in').find('.video-img').find('img').attr('src',localStorage.getItem("img"));
+			$('.descript-video').find('.fbtime').text(localStorage.getItem("fbtime"));
+			$('.descript-video').find('.teacher').text(localStorage.getItem("teacher"));
+			$('.descript-video').find('.school').text(localStorage.getItem("schoolname"));
+			$('.descript-video').find('.zhangjie').text(localStorage.getItem("zhangjie"));
+			$('.descript-video').find('.playtime').text(localStorage.getItem("playtime"));
+			
+				var screen = $(".second-navi").width();
+				var slideNav = $('.second-navi').find('.slideNav');
+				for(var j = 0; j < slideNav.length; j++) {
+					var $li1 = slideNav.eq(j).find(".apply_nav").find('.apply_w').find('li');
+					var $window1 = slideNav.eq(j).find(".apply_nav").find(".apply_w");
+					var $left1 = slideNav.eq(j).find(".img_l");
+					var $right1 = slideNav.eq(j).find(".img_r");
+					var page = 1; //初始化当前的版面为1
+					var winWidth = 0;
+					for(var i = 0; i < $li1.length; i++) {
+						winWidth += $li1.eq(i).width() + 10;
+					}
+					$window1.css("width", winWidth);
+
+					if($window1.width() <= 360) {
+						$left1.css("display", "none");
+						$right1.css("display", "none");
+					}
+					var rc1 = $li1.length / 4;
+
+					var page_count = Math.ceil(rc1);
+					slideNav.eq(j).attr('pagecount', page_count);
+					var divLeft = $window1.css("left");
+					if(divLeft == "0px") {
+						$left1.css("display", "none");
+					} else {
+						$left1.css("display", "block");
+					}
+				}
+			});
+			
+
+			function left(obj) {
+				var widthnum = "355px";
+				var wrap = $(obj).parent();
+				var page_count = wrap.attr('pagecount');
+				var rc1 = page_count;
+				var page = $(obj).parent().attr('page');
+				if(page != 1) {
+					page--;
+				}
+
+				$(obj).parent().attr('page', page);
+
+				if(page < 1) {
+					return;
+				}
+				nav(wrap, page, page_count);
+				$(obj).parent().find(".apply_nav").find(".apply_w").animate({
+					left: '+=' + widthnum + ''
+				}, 1000);
+			}
+
+			function right(obj) {
+				var widthnum = "355px";
+				var wrap = $(obj).parent();
+				var page_count = wrap.attr('pagecount');
+				var page = $(obj).parent().attr('page');
+				if(page < page_count) {
+					page++;
+				}
+
+				$(obj).parent().attr('page', page);
+
+				if(page > page_count) {
+					alert(34)
+					return;
+				}
+				nav(wrap, page, page_count);
+				$(obj).parent().find(".apply_nav").find(".apply_w").animate({
+					left: '-=' + widthnum + ''
+				}, 1000);
+			}
+
+			function nav(obj, page, page_count) {
+				if(page == 1) {
+					obj.find(".img_l").hide().siblings(".img_r").show();
+				} else if(page == page_count) {
+					obj.find(".img_r").hide().siblings(".img_l").show();
+				} else {
+					obj.find(".img_l").show().siblings(".img_r").show();
+				}
+			}
+		</script>
+	</body>
+
+</html>

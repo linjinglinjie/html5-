@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+section {
+	position: fixed;
+	width: 840px;
+	height: 600px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.video-title {
+	position: relative;
+}
+
+.video-title a {
+	position: absolute;
+	right: 5px;
+	font-size: 12px;
+	top: 0px;
+	color: #87DB3C;
+	line-height: 30px;
+}
+
+.video-title a em {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: 5px;
+	vertical-align: middle;
+	border-right: 5px dashed;
+	border-right: 5px solid\9;
+	border-bottom: 5px solid transparent;
+	border-top: 5px solid transparent;
+	transition: all 0.3s ease-in 0s;
+}
+
+em.active {
+	transform: rotateY(180deg);
+}
+
+.allSign {
+	background: #fff;
+	display: none;
+}
+
+.video-signBox {
+	display: none;
+	position: absolute;
+	top: 20px;
+	right: 0;
+	background: #fff;
+	width: 350px;
+	height: 470px;
+	padding: 15px 20px 5px 20px;
+	background: url(../../../images/dadianbiji.png) no-repeat top center;
+	background-size: 100% 100%;
+}
+
+.signtitle {
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	margin-top: 70px;
+}
+
+.signtitle em#signTime {
+	display: inline-block;
+	max-width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: -5px;
+}
+
+.signtitle em.caozuo {
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.signtitle em.caozuo.delete {
+	background: url(../../../images/delete.png) no-repeat center center;
+}
+
+.signtitle em.caozuo.shezhi {
+	background: url(../../../images/shezhi.png) no-repeat center center;
+}
+
+.sign-content {
+	margin-top: 35px;
+}
+
+.sign-content textarea {
+	background: none;
+	height: 240px;
+	width: 100%;
+	line-height: 30px;
+	padding-left: 10px;
+	font-family: 'Microsoft YaHei';
+}
+
+.sign-content .text {
+	margin-bottom: 10px;
+}
+
+.sign-content input[type="button"] {
+	height: 30px;
+	line-height: 30px;
+	background: #E1E1E1;
+	color: #fff;
+	padding: 0 10px;
+	margin: 0 10px;
+	border-radius: 4px;
+	transition: all 0.3s ease-in 0s;
+}
+
+.sign-content input.close {
+	float: none;
+	opacity: 1;
+	color: #666;
+	font-size: 16px;
+	font-weight: normal;
+	width: 80px;
+	background: url(../../../images/quxiao.png) no-repeat center center;
+}
+
+
+/*.sign-content input[type="button"]:hover{
+	background: ;
+}*/
+
+.sign-look {
+	display: none;
+}
+
+.sign-content input.sign-submit,
+.sign-content input.sign-look {
+	width: 80px;
+	background: url(../../../images/baocun.png) no-repeat center center;
+}
+
+.prevnext {
+	float: right;
+}
+
+.prevnext a {
+	display: inline-block;
+	width: 8px;
+	height: 13px;
+	margin: 0 5px;
+	background: url(../../../images/next.png) no-repeat center center;
+}
+
+.prevnext a.prev {
+	transform: rotateY(180deg);
+}
