@@ -24,5 +24,6 @@
 				<arguments>1.0-name-matches-false-false-node_modules</arguments>
 			</matcher>
 		</filter>
+		
 	</filteredResources>
 </projectDescription>
